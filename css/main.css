@@ -22,6 +22,9 @@
 :root {
     color-scheme: dark;
 }
+::placeholder {
+    color: rgba(255, 255, 255, 0.08);
+}
 
 * {
     margin: 0;
@@ -182,6 +185,24 @@ img {
 
     font-size: 35px;
 }
+.cont-mail {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    height: 90%;
+    margin: auto;
+
+    font-size: 40px;
+}
+.cont-signup {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: flex-start;
+}
 
 .button-login {
     display: flex;
@@ -245,6 +266,21 @@ img {
 
     background-color: #FFB4D3;
 }
+.button-subscribe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: fit-content;
+    height: 100%;
+    border-radius: 10px;
+    margin: 50px;
+    padding: 0px 40px 0px 40px;
+
+    font-size: 18px;
+
+    background-color: #CEAAFF;
+}
 
 .box-crypto {
     display: flex;
@@ -267,6 +303,21 @@ img {
     width: 1200px;
     height: 600px;
     border-radius: 40px;
+    
+    border: #2A3744 solid;
+    background-color: #121E28;
+}
+.box-signup { 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    width: 40%;
+    height: 100px;
+    border-radius: 30px;
+    padding: 0px 40px 0px 40px;
+
+    font-size: 25px;
     
     border: #2A3744 solid;
     background-color: #121E28;
