@@ -210,8 +210,17 @@ img {
     flex-flow: column wrap;
 
     width: fit-content;
-    height: 600px;
-    margin-top: 50px;
+    height: fit-content;
+
+    font-size: 40px;
+}
+.cont-see-all {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 10px;
+
+    font-size: 20px;
 }
 
 .button-login {
@@ -332,9 +341,24 @@ img {
     border: #2A3744 solid;
     background-color: #121E28;
 }
+.box-article {
+    display: flex;
+    flex-direction: column;
+    
+    width: 280px;
+    height: 296px;
+    border-radius: 20px;
+    padding: 40px;
+}
 
 .margin-auto{
     margin: auto;
+}
+.align-start {
+    align-self: self-start;
+}
+.align-end {
+    align-self: self-end;
 }
 
 .font-montserrat {
@@ -377,6 +401,19 @@ img {
 .color-red {
     color: #FF9E9E;
 }
-.color-transparent {
+.color-transparent-white {
     color: rgba(255, 255, 255, 0.08);
+}
+.color-transparent-black {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.bg-color-cyan {
+    background-color: #77E6FF;
+}
+.bg-color-purple {
+    background-color: #E2C1F9;
+}
+.bg-color-yellow {
+    background-color: #DBE268;
 }
