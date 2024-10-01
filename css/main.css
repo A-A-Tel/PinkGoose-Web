@@ -1,30 +1,41 @@
+/* Had to put the fonts folder in the CSS folder to make it work, otherwise the paths would only function on live-server */
+
 @font-face {
     font-family: montserrat;
-    src: url(/fonts/Montserrat-Regular.ttf);
+    src: url(fonts/Montserrat-Regular.ttf);
 }
+
 @font-face {
     font-family: boldserrat;
-    src: url(/fonts/Montserrat-Bold.ttf);
+    src: url(fonts/Montserrat-Bold.ttf);
 }
+
 @font-face {
     font-family: semiserrat;
-    src: url(/fonts/Montserrat-SemiBold.ttf);
+    src: url(fonts/Montserrat-SemiBold.ttf);
 }
+
 @font-face {
     font-family: midserrat;
-    src: url(/fonts/Montserrat-Medium.ttf);
+    src: url(fonts/Montserrat-Medium.ttf);
 }
+
 @font-face {
     font-family: lato;
-    src: url(/fonts/Lato-Bold.ttf);
+    src: url(fonts/Lato-Bold.ttf);
 }
+
+/* Makes the scroll bar dark and makes the input placeholder transparent */
 
 :root {
     color-scheme: dark;
 }
+
 ::placeholder {
     color: rgba(255, 255, 255, 0.08);
 }
+
+/* Basic element presetting */
 
 * {
     margin: 0;
@@ -32,9 +43,11 @@
 
     color: #fff;
 }
+
 body {
-    background-color: #10151A;
+    background-color: #0A1117;
 }
+
 header {
     display: flex;
     flex-direction: row;
@@ -46,10 +59,11 @@ header {
     height: 100px;
     position: sticky;
     z-index: 99;
-    top: 0; 
-    
-    background-color: #10151A;
+    top: 0;
+
+    background-color: #0A1117;
 }
+
 main {
     display: flex;
     flex-direction: column;
@@ -59,13 +73,29 @@ main {
     height: fit-content;
     margin-top: 20px;
 }
+
+footer {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+
+    width: 100%;
+    height: 200px;
+    margin-top: 250px;
+
+    background-color: #121E28;
+}
+
 a {
     text-decoration: none;
 }
+
 img {
     width: fit-content;
     height: fit-content;
 }
+
+/* Containers */
 
 .cont-logo {
     display: flex;
@@ -74,6 +104,7 @@ img {
 
     font-size: 50px;
 }
+
 .cont-bartext {
     display: flex;
     flex-direction: row;
@@ -85,6 +116,7 @@ img {
 
     font-size: 20px;
 }
+
 .cont-heading {
     display: flex;
     flex-direction: column;
@@ -93,12 +125,14 @@ img {
 
     font-size: 50px;
 }
-.cont-text{
+
+.cont-text {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 8px;
 }
+
 .cont-projects {
     display: flex;
     flex-direction: column;
@@ -112,6 +146,7 @@ img {
 
     font-size: 40px;
 }
+
 .cont-buttons {
     display: flex;
     flex-flow: row wrap;
@@ -120,6 +155,7 @@ img {
 
     max-width: 70%;
 }
+
 .cont-designed {
     display: flex;
     flex-direction: column;
@@ -132,6 +168,7 @@ img {
 
     font-size: 40px;
 }
+
 .cont-works {
     display: flex;
     flex-flow: column wrap;
@@ -144,6 +181,7 @@ img {
 
     font-size: 40px;
 }
+
 .cont-crypto {
     display: flex;
     flex-flow: column wrap;
@@ -153,6 +191,7 @@ img {
 
     font-size: 20px;
 }
+
 .cont-coin {
     display: flex;
     flex-direction: row;
@@ -161,6 +200,7 @@ img {
     width: 100%;
     height: fit-content;
 }
+
 .cont-help {
     display: flex;
     flex-flow: column wrap;
@@ -171,12 +211,14 @@ img {
 
     font-size: 40px;
 }
+
 .cont-people {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     column-gap: 20px;
 }
+
 .cont-steps {
     display: flex;
     flex-direction: row;
@@ -185,6 +227,7 @@ img {
 
     font-size: 35px;
 }
+
 .cont-mail {
     display: flex;
     flex-flow: column wrap;
@@ -197,23 +240,28 @@ img {
 
     font-size: 40px;
 }
+
 .cont-signup {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-content: flex-start;
-    
+
     width: 65%;
 }
+
 .cont-press {
     display: flex;
     flex-flow: column wrap;
+    row-gap: 20px;
 
     width: fit-content;
     height: fit-content;
+    margin-top: 200px;
 
     font-size: 40px;
 }
+
 .cont-see-all {
     display: flex;
     flex-direction: row;
@@ -223,6 +271,73 @@ img {
     font-size: 20px;
 }
 
+.cont-articles {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 20px;
+
+    font-size: 22px;
+}
+
+.cont-read {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+
+    width: fit-content;
+    height: 45%;
+
+    font-size: 18px;
+}
+
+.cont-bottom-text {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    row-gap: 40px;
+
+    width: fit-content;
+    height: fit-content;
+    margin-top: 750px;
+}
+
+.cont-social-media {
+    display: flex;
+    flex-direction: row;
+    column-gap: 75px;
+}
+
+.cont-social-list {
+    display: flex;
+    flex-flow: column wrap;
+    row-gap: 5px;
+
+    margin-left: 10px;
+
+    font-size: 20px;
+}
+
+.cont-footer-text {
+    display: flex;
+    flex-direction: row;
+    column-gap: 40px;
+    align-self: center;
+
+    font-size: 25px;
+}
+
+.cont-footer-socials {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    align-self: flex-end;
+
+    margin-right: 25%;
+}
+
+/* Buttons */
+
 .button-login {
     display: flex;
     align-items: center;
@@ -230,7 +345,7 @@ img {
 
     width: fit-content;
     height: 35px;
-    border-radius:10px;
+    border-radius: 10px;
     margin: 0px 90px 0px 90px;
     padding: 0px 18px 0px 18px;
 
@@ -238,6 +353,7 @@ img {
 
     background-color: #243241;
 }
+
 .button-start {
     display: flex;
     align-items: center;
@@ -253,6 +369,7 @@ img {
 
     background-color: #CEAAFF;
 }
+
 .button-project {
     display: flex;
     align-items: center;
@@ -268,6 +385,7 @@ img {
 
     background-color: #182632;
 }
+
 .button-launched {
     display: flex;
     align-items: center;
@@ -285,6 +403,7 @@ img {
 
     background-color: #FFB4D3;
 }
+
 .button-subscribe {
     display: flex;
     align-items: center;
@@ -301,6 +420,8 @@ img {
     background-color: #CEAAFF;
 }
 
+/* Item boxes */
+
 .box-crypto {
     display: flex;
     align-items: center;
@@ -309,10 +430,11 @@ img {
     width: 130px;
     height: 130px;
     border-radius: 30%;
-    
+
     border: #2A3744 solid;
     background-color: #121E28;
 }
+
 .box-mail {
     display: flex;
     align-items: center;
@@ -322,11 +444,12 @@ img {
     width: 1200px;
     height: 400px;
     border-radius: 40px;
-    
+
     border: #2A3744 solid;
     background-color: #121E28;
 }
-.box-signup { 
+
+.box-signup {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -337,83 +460,144 @@ img {
     padding: 0px 40px 0px 40px;
 
     font-size: 25px;
-    
+
     border: #2A3744 solid;
     background-color: #121E28;
 }
+
 .box-article {
     display: flex;
     flex-direction: column;
-    
-    width: 280px;
-    height: 296px;
+    justify-content: space-evenly;
+    row-gap: 20px;
+
+    width: 320px;
+    height: 336px;
     border-radius: 20px;
-    padding: 40px;
+    padding: 20px;
 }
 
-.margin-auto{
+.box-social-media {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    width: 260px;
+    height: 50px;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+/* Positioning */
+
+.margin-auto {
     margin: auto;
 }
+
 .align-start {
     align-self: self-start;
 }
+
 .align-end {
     align-self: self-end;
+}
+
+/* Text styling */
+
+.font-size-50 {
+    font-size: 50px;
+}
+
+.font-size-46 {
+    font-size: 46px;
+}
+
+.font-size-16 {
+    font-size: 16px;
+}
+
+.font-underline {
+    text-decoration: underline;
 }
 
 .font-montserrat {
     font-family: montserrat;
 }
+
 .font-boldserrat {
     font-family: boldserrat;
 }
+
 .font-semiserrat {
     font-family: semiserrat;
 }
+
 .font-midserrat {
     font-family: midserrat;
 }
+
 .font-lato {
     font-family: lato;
 }
 
+/* Colors */
+
 .color-pink {
     color: #FFB4D3;
 }
+
 .color-semiblack {
     color: #10151A;
 }
+
 .color-black {
     color: #0A1117
 }
+
 .color-yellow {
     color: #FFC24C;
 }
+
 .color-purple {
     color: #D387F7;
 }
+
 .color-cyan {
     color: #77E6FF;
 }
+
 .color-blue {
     color: #23C9DE;
 }
+
 .color-red {
     color: #FF9E9E;
 }
+
+.color-orange {
+    color: #FFC803;
+}
+
 .color-transparent-white {
     color: rgba(255, 255, 255, 0.08);
 }
+
 .color-transparent-black {
-    color: rgba(255, 255, 255, 0.2);
+    color: rgba(0, 0, 0, 0.5);
 }
 
 .bg-color-cyan {
     background-color: #77E6FF;
 }
+
 .bg-color-purple {
     background-color: #E2C1F9;
 }
+
 .bg-color-yellow {
     background-color: #DBE268;
+}
+
+.bg-color-orange {
+    background-color: #FFC803;
 }
