@@ -13,12 +13,14 @@
                 <span>Pink</span>
                 <span class="color-pink">Goose</span>
             </div></a>
-            <div class="cont-bartext">
-                <a href="index.html"><span>Home</span></a>
-                <a href="learn.html"><span>Learn</span></a>
-                <a href="about.html"><span>About</span></a>
-                <a  class="font-underline" href="contact.html"><span>Contact</span></a>
-            </div>
+            <nav class="cont-bartext">
+                <ul class="nav-list">
+                    <li><a href="index.html"><span>Home</span></a></li>
+                    <li><a href="learn.html"><span>Learn</span></a></li>
+                    <li><a href="about.html"><span>About</span></a></li>
+                    <li><a href="contact.html"><span class="font-underline">Contact</span></a></li>
+                </ul>
+            </nav>
             <a href="#"><div class="button-login font-montserrat">
                 <span>Login</span>
             </div></a>
@@ -28,14 +30,14 @@
                 <span class="font-size-50 font-lato">What's your GOOSE idea?</span>
                 <span class="font-size-46 font-lato color-transparent-white">Let’s chat and see how we can help</span>
                 <div class="cont-social-media">
-                    <a href="#" class="box-social-media bg-color-orange">
+                    <a href="#" class="box-social-media shadow-tel bg-color-orange">
                         <img src="images/telegram.png" alt="telegram logo">
                         <div class="cont-social-list">
                             <span class="font-boldserrat color-semiblack">Telegram</span>
                             <span class="font-size-16 font-midserrat color-transparent-black">@Superdao-team</span>
                         </div>
                     </a>
-                    <a href="mailto:hello@superdao.co" class="box-social-media bg-color-purple">
+                    <a href="mailto:hello@superdao.co" class="box-social-media shadow-ema bg-color-purple">
                         <img src="images/mail.png" alt="mail logo">
                         <div class="cont-social-list">
                             <span class="font-boldserrat color-semiblack">Email</span>
@@ -44,11 +46,11 @@
                     </a>
                 </div>
             </div>
-            <form class="box-contact">
+            <form target="_blank" action="https://t.ly/m3pKu" class="box-contact">
                 <span class="font-size-50 font-lato">Send a post Goose</span>
-                <input class="box-input-small font-semiserrat" type="text" placeholder="Your email">
-                <input class="box-input-small font-semiserrat" type="text" placeholder="Your name">
-                <textarea class="box-input-large font-semiserrat" type="text" placeholder="Your message"></textarea>
+                <input required class="box-input-small font-semiserrat" type="email" placeholder="Your email">
+                <input required class="box-input-small font-semiserrat" type="text" placeholder="Your name">
+                <textarea required class="box-input-large font-semiserrat" type="text" placeholder="Your message"></textarea>
                 <select required class="box-select font-semiserrat">
                     <option selected disabled value="">Color of your goose</option>
                     <option>Red</option>
@@ -56,12 +58,16 @@
                     <option>Blue</option>
                     <option>Black</option>
                 </select>
-                <a href="#" class="button-send">
-                    <span class="font-semiserrat color-semiblack">Send</span>
-                </a>
+                <input class="button-send font-semiserrat color-semiblack" type="submit" href="#" value="Send">
             </form>
         </main>
         <footer>
+            <div class="cont-footer-socials index-neg1">
+                <a href="#"><img src="images/social-twitter.png" alt="twitter"></a>
+                <a href="#"><img src="images/social-telegram.png" alt="telegram"></a>
+                <a href="#"><img src="images/social-youtube.png" alt="youtube"></a>
+                <a href="#"><img src="images/social-discord.png" alt="discord"></a>
+            </div>
             <div class="cont-footer-text font-semiserrat">
                 <a href="about.html"><span>About</span></a>
                 <a href="#"><span>Jobs</span></a>
