@@ -299,7 +299,7 @@ img {
 
     width: fit-content;
     height: fit-content;
-    margin: 150px;
+    margin: 100px;
 }
 
 .cont-social-media {
@@ -433,7 +433,7 @@ img {
 }
 
 .button-subscribe {
-    display: flex;
+    display: flezx;
     align-items: center;
     justify-content: center;
 
@@ -445,6 +445,8 @@ img {
 
     font-size: 25px;
 
+    cursor: pointer;
+    border: none;
     background-color: #CEAAFF;
 }
 
@@ -639,6 +641,43 @@ img {
     align-self: self-end;
 }
 
+.star-1 {
+    position: absolute;
+    left: 30%;
+    margin-top: -30px;
+}
+
+.star-2 {
+    position: absolute;
+    right: 30%;
+}
+
+.star-3 {
+    position: absolute;
+    left: 32%;
+}
+
+.star-4 {
+    position: absolute;
+    right: 40%;
+}
+
+.star-5 {
+    position: absolute;
+    left: 30%;
+    margin-top: -30px;
+}
+
+.star-6 {
+    position: absolute;
+    left: 18%;
+    margin-top: -25px;
+}
+
+.star-7 {
+    margin-top: 50px;
+}
+
 /* Text styling */
 
 .font-size-50 {
@@ -747,8 +786,6 @@ img {
     background-color: #FFC803;
 }
 
-/* Misc */
-
 .shadow-eth {
     box-shadow: #6D88F0 0px 0px 8px;
     border-radius: 50%
@@ -786,6 +823,8 @@ img {
 .shadow-ema {
     box-shadow: #E2C1F9 0px 0px 8px;
 }
+
+/* Misc */
 
 .nav-list {
     list-style-type: none;
