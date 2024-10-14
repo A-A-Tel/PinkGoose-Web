@@ -2,27 +2,27 @@
 
 @font-face {
     font-family: montserrat;
-    src: url(../fonts/Montserrat-Regular.ttf);
+    src: url("../fonts/Montserrat-Regular.ttf");
 }
 
 @font-face {
     font-family: boldserrat;
-    src: url(../fonts/Montserrat-Bold.ttf);
+    src: url("../fonts/Montserrat-Bold.ttf");
 }
 
 @font-face {
     font-family: semiserrat;
-    src: url(../fonts/Montserrat-SemiBold.ttf);
+    src: url("../fonts/Montserrat-SemiBold.ttf");
 }
 
 @font-face {
     font-family: midserrat;
-    src: url(../fonts/Montserrat-Medium.ttf);
+    src: url("../fonts/Montserrat-Medium.ttf");
 }
 
 @font-face {
     font-family: lato;
-    src: url(../fonts/Lato-Bold.ttf);
+    src: url("../fonts/Lato-Bold.ttf");
 }
 
 /* Makes the scroll bar dark and makes the input placeholder transparent */
@@ -372,8 +372,8 @@ img {
     width: fit-content;
     height: 35px;
     border-radius: 10px;
-    margin: 0px 90px 0px 90px;
-    padding: 0px 18px 0px 18px;
+    margin: 0 90px;
+    padding: 0 18px;
 
     font-size: 15px;
 
@@ -389,11 +389,11 @@ img {
     height: 50px;
     border-radius: 10px;
     margin: 50px;
-    padding: 0px 40px 0px 40px;
+    padding: 0 40px;
 
     font-size: 18px;
 
-    box-shadow: #FFB800 0px 0px 8px;
+    box-shadow: #FFB800 0 0 8px;
     background-color: #CEAAFF;
 }
 
@@ -405,8 +405,8 @@ img {
     width: fit-content;
     height: 60px;
     border-radius: 60px;
-    margin: 0px 10px 0px 10px;
-    padding: 0px 20px 0px 20px;
+    margin: 0 10px;
+    padding: 0 20px;
 
     font-size: 15px;
 
@@ -421,8 +421,8 @@ img {
     width: fit-content;
     height: 40px;
     border-radius: 60px;
-    margin: 0px 10px 0px 10px;
-    padding: 0px 20px 0px 20px;
+    margin: 0 10px;
+    padding: 0 20px;
     position: relative;
     bottom: 70px;
 
@@ -433,7 +433,7 @@ img {
 }
 
 .button-subscribe {
-    display: flezx;
+    display: flex;
     align-items: center;
     justify-content: center;
 
@@ -441,7 +441,7 @@ img {
     height: 100%;
     border-radius: 20px;
     margin-left: 25px;
-    padding: 0px 40px 0px 40px;
+    padding: 0 40px;
 
     font-size: 25px;
 
@@ -460,7 +460,7 @@ img {
     height: 60px;
     border-radius: 10px;
     margin: 50px;
-    padding: 0px 55px 0px 55px;
+    padding: 0 55px;
 
     font-size: 18px;
 
@@ -507,7 +507,7 @@ img {
     width: 100%;
     height: 75px;
     border-radius: 30px;
-    padding: 0px 40px 0px 40px;
+    padding: 0 40px;
 
     font-size: 25px;
 
@@ -573,7 +573,7 @@ img {
     width: 900px;
     height: fit-content;
     border-radius: 40px;
-    padding: 75px 0px 20px 0px;
+    padding: 75px 0 20px;
 
 
     border: #2A3744 solid;
@@ -584,7 +584,7 @@ img {
     width: calc(80% - 40px);
     height: 50px;
     border-radius: 20px;
-    margin: 30px 0px 30px 0px;
+    margin: 30px 0;
     padding: 10px;
     padding-left: 30px;
 
@@ -598,8 +598,8 @@ img {
     width: calc(80% - 60px);
     height: 400px;
     border-radius: 20px;
-    margin: 30px 0px 30px 0px;
-    padding: 20px 30px 10px 30px;
+    margin: 30px 0;
+    padding: 20px 30px 10px;
     resize: none;
 
     font-size: 25px;
@@ -612,7 +612,7 @@ img {
     width: calc(80% + 5px);
     height: 75px;
     border-radius: 20px;
-    margin: 30px 0px 30px 0px;
+    margin: 30px 0;
     padding: 10px;
     padding-left: 30px;
 
@@ -621,7 +621,7 @@ img {
     border: #2A3744 solid;
     appearance: none;
     background-color: #121E28;
-    background-image: url(../images/arrow-down-pink.png);
+    background-image: url("../images/arrow-down-pink.png");
     background-position: 95%;
     background-repeat: no-repeat;
 }
@@ -797,41 +797,41 @@ img {
 }
 
 .shadow-eth {
-    box-shadow: #6D88F0 0px 0px 8px;
+    box-shadow: #6D88F0 0 0 8px;
     border-radius: 50%
 }
 
 .shadow-pol {
-    box-shadow: #8B51EC 0px 0px 8px;
+    box-shadow: #8B51EC 0 0 8px;
     border-radius: 50%
 }
 
 .shadow-gno {
-    box-shadow: #008C73 0px 0px 8px;
+    box-shadow: #008C73 0 0 8px;
     border-radius: 50%
 }
 
 .shadow-sna {
-    box-shadow: #FFB241 0px 0px 8px;
+    box-shadow: #FFB241 0 0 8px;
     border-radius: 50%
 }
 
 .shadow-ens {
-    box-shadow: #42B5D9 0px 0px 8px;
+    box-shadow: #42B5D9 0 0 8px;
     border-radius: 50%
 }
 
 .shadow-ope {
-    box-shadow: #2E8AE6 0px 0px 8px;
+    box-shadow: #2E8AE6 0 0 8px;
     border-radius: 50%
 }
 
 .shadow-tel {
-    box-shadow: #FFC803 0px 0px 8px;
+    box-shadow: #FFC803 0 0 8px;
 }
 
 .shadow-ema {
-    box-shadow: #E2C1F9 0px 0px 8px;
+    box-shadow: #E2C1F9 0 0 8px;
 }
 
 /* Misc */
