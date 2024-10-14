@@ -1,28 +1,28 @@
-/* Had to put the fonts folder in the CSS folder to make it work, otherwise the paths would only function on live-server */
+/* All the site fonts */
 
 @font-face {
     font-family: montserrat;
-    src: url(fonts/Montserrat-Regular.ttf);
+    src: url(../fonts/Montserrat-Regular.ttf);
 }
 
 @font-face {
     font-family: boldserrat;
-    src: url(fonts/Montserrat-Bold.ttf);
+    src: url(../fonts/Montserrat-Bold.ttf);
 }
 
 @font-face {
     font-family: semiserrat;
-    src: url(fonts/Montserrat-SemiBold.ttf);
+    src: url(../fonts/Montserrat-SemiBold.ttf);
 }
 
 @font-face {
     font-family: midserrat;
-    src: url(fonts/Montserrat-Medium.ttf);
+    src: url(../fonts/Montserrat-Medium.ttf);
 }
 
 @font-face {
     font-family: lato;
-    src: url(fonts/Lato-Bold.ttf);
+    src: url(../fonts/Lato-Bold.ttf);
 }
 
 /* Makes the scroll bar dark and makes the input placeholder transparent */
@@ -175,7 +175,7 @@ img {
     align-items: center;
     row-gap: 40px;
 
-    width: 60%;
+    width: 100%;
     height: fit-content;
     margin-top: 200px;
 
@@ -197,7 +197,7 @@ img {
     flex-direction: row;
     justify-content: space-evenly;
 
-    width: 100%;
+    width: 1200px;
     height: fit-content;
 }
 
@@ -611,7 +611,6 @@ img {
 .box-select {
     width: calc(80% + 5px);
     height: 75px;
-    min-height: fit-content;
     border-radius: 20px;
     margin: 30px 0px 30px 0px;
     padding: 10px;
@@ -620,7 +619,11 @@ img {
     font-size: 25px;
 
     border: #2A3744 solid;
+    appearance: none;
     background-color: #121E28;
+    background-image: url(../images/arrow-down-pink.png);
+    background-position: 95%;
+    background-repeat: no-repeat;
 }
 
 /* Positioning */
@@ -645,37 +648,44 @@ img {
     position: absolute;
     left: 30%;
     margin-top: -30px;
+    user-select: none;
 }
 
 .star-2 {
     position: absolute;
     right: 30%;
+    user-select: none;
 }
 
 .star-3 {
     position: absolute;
     left: 32%;
+    user-select: none;
 }
 
 .star-4 {
     position: absolute;
     right: 40%;
+    user-select: none;
 }
 
 .star-5 {
     position: absolute;
     left: 30%;
     margin-top: -30px;
+    user-select: none;
 }
 
 .star-6 {
     position: absolute;
     left: 18%;
     margin-top: -25px;
+    user-select: none;
 }
 
 .star-7 {
     margin-top: 50px;
+    user-select: none;
 }
 
 /* Text styling */
