@@ -1,3 +1,4 @@
+
 /* All the site fonts */
 @font-face {
     font-family: montserrat;
@@ -80,12 +81,34 @@ footer {
 }
 
 a {
+    display: block;
     text-decoration: none;
+    transition: scale 0.3s ease;
+    width: fit-content;
+}
+
+a:hover {
+    scale: 1.07;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    transition: scale 0.3s ease;
+}
+
+button:hover {
+    scale: 1.1;
 }
 
 img {
     width: fit-content;
     height: fit-content;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font: inherit;
+    font-size: 100%;
 }
 
 /* Containers */
@@ -278,6 +301,7 @@ img {
 .cont-social-list {
     display: flex;
     flex-flow: column wrap;
+    align-items: flex-start;
     row-gap: 5px;
     margin-left: 10px;
     font-size: 20px;
@@ -465,10 +489,10 @@ img {
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 260px;
+    width: 300px;
     height: fit-content;
     border-radius: 20px;
-    padding: 20px;
+    padding: 20px 10px;
 }
 
 .box-hero {
@@ -540,6 +564,7 @@ img {
     padding-left: 30px;
     font-size: 25px;
     border: #2A3744 solid;
+    cursor: pointer;
     appearance: none;
     background-color: #121E28;
     background-image: url("../images/arrow-down-pink.png");
@@ -757,8 +782,4 @@ img {
     list-style-type: none;
     display: flex;
     gap: 50px;
-}
-
-.index-neg1 {
-    z-index: -1;
 }
