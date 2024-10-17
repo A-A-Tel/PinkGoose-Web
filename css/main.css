@@ -95,6 +95,7 @@ button {
     border: none;
     cursor: pointer;
     transition: scale 0.3s ease;
+    font-family: inherit;
 }
 
 button:hover {
@@ -106,7 +107,7 @@ img {
     height: fit-content;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, p {
     font: inherit;
     font-size: 100%;
 }
@@ -782,4 +783,8 @@ h1, h2, h3, h4, h5, h6 {
     list-style-type: none;
     display: flex;
     gap: 50px;
+}
+
+.text-center {
+    text-align: center;
 }
